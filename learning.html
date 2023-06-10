@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React Learning</title>
+</head>
+
+<body>
+    <div id="root"> Not Rendered properly!!
+        <!-- React will override whatever inside the root is there while rendering -->
+        <!-- <h1>HEyyy</h1> -->
+    </div>
+    <!-- <div id="multipleroot"></div> -->
+    <!-- create the h2 tag with Javascript -->
+    <!-- <script>
+    const heading = document.createElement('h2')
+    heading.innerHTML = 'Namaste Javascript !! Using Javascript'
+    const root = document.getElementById('root')
+    root.appendChild(heading)
+</script> -->
+<!-- React CDN Links to directly use as a script without installing. -->
+<script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+<!-- {} => className , id  or extra attribute -->
+<script>
+    // to add multiple headers or tags 
+    const heading = React.createElement("h1", { id: 'title'}, "Header1!!!")
+    const heading2 = React.createElement("h2", { id: 'title2' }, "Header2!!!")
+    
+    const multipleTag = React.createElement('div', {id: 'container'}, [heading, heading2]) 
+    const singleTag = React.createElement('h3', {id: 'container'}, 'Header 3 ') 
+
+    const main = React.createElement('div', {id: 'main'}, [multipleTag, singleTag]) 
+
+    const root = ReactDOM.createRoot(document.getElementById('root'))
+    console.log(root)
+    <!-- Yes we can have multiple root as well  -->
+    // const multipleRoot = ReactDOM.createRoot(document.getElementById('multipleroot'))
+    // multipleRoot.render(heading) 
+    root.render(main)
+</script>
+
+</body>
+
+</html>
