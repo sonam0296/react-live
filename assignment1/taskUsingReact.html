@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>Heyy!!! Before root nothing overrides.....</h2>
+    <div id="root"></div>
+    <h2>Heyy!!! After root nothing overrides.....</h2>
+    <!-- CDN links to directly add React library -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <!-- single h1 tag -->
+    <script>
+        const heading = React.createElement('h1', {className: 'heading'}, 'Created HTML heading tag using React')
+        const root = ReactDOM.createRoot(document.getElementById('root'))
+        console.log(heading)
+        root.render(heading)
+    </script>
+    <!-- multiple tags in html -->
+    <script>
+        const heading1 = React.createElement('h2', {id: 'header'}, 'Header 1')
+        const heading2 = React.createElement('h3', {id: 'header'}, 'Header 2')
+        const container = React.createElement('div', {className: 'container'}, [heading1, heading2])
+        const multipleHeaderRoot = ReactDOM.createRoot(document.getElementById('root'))
+        multipleHeaderRoot.render(container)
+    </script>
+    <!-- here React overrides the 3rd script data with the multiple script tags. -->
+</body>
+
+</html>
