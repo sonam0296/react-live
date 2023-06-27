@@ -25,7 +25,7 @@
     <script>
         const heading1 = React.createElement('h2', {id: 'header'}, 'Header 1')
         const heading2 = React.createElement('h3', {id: 'header'}, 'Header 2')
-        const container = React.createElement('div', {className: 'container'}, [heading1, heading2])
+        const container = React.createElement('div', {className: 'container', hello: 'world'}, [heading1, heading2])
         const multipleHeaderRoot = ReactDOM.createRoot(document.getElementById('root'))
         multipleHeaderRoot.render(container)
     </script>
