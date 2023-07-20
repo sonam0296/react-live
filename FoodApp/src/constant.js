@@ -1,4 +1,6 @@
-[
+export const IMG_CDN_URL = "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/"
+
+export const RestuarantData = [
     {
         "type": "restaurant",
         "data": {
@@ -9,7 +11,7 @@
             "image": "g8zosy7zlth2bcsqsefk",
             "cuisines": [
                 "Chinese",
-                "Snacks",
+                "Snacks", 
                 "Indian",
                 "Biryani"
             ],
@@ -477,6 +479,117 @@
             "avgRating": "4.7",
             "totalRatings": 20,
             "new": false
+        },
+        "subtype": "basic"
+    },
+    {
+        "type": "restaurant",
+        "data": {
+            "type": "F",
+            "id": "723450",
+            "name": "Mint Restaurant",
+            "uuid": "384f8e3d-b7ac-4d4f-8932-ea37f97ea12e",
+            "city": "5",
+            "area": "Kamothe",
+            "totalRatingsString": "Too Few Ratings",
+            "image": "36419d8b1735dad911d0812e1c5e1583",
+            "cuisines": [
+                "Indian",
+                "Biryani",
+                "Beverages",
+                "Punjabi"
+            ],
+            "tags": [],
+            "costForTwo": 50000,
+            "costForTwoString": "₹500 FOR TWO",
+            "deliveryTime": 36,
+            "minDeliveryTime": 36,
+            "maxDeliveryTime": 36,
+            "slaString": "36 MINS",
+            "lastMileTravel": 9.600000381469727,
+            "slugs": {
+                "restaurant": "mint-restaurant-kamothe-kamothe",
+                "city": "mumbai"
+            },
+            "cityState": "5",
+            "address": "SHOP NO 2 SIDDHESHWAR CHS PLOT NO 9A SECTOR 19 KAMOTHE, Panvel City, Raigad, Maharashtra - 410209",
+            "locality": "Raigad",
+            "parentId": 136629,
+            "unserviceable": false,
+            "veg": false,
+            "select": false,
+            "favorite": false,
+            "tradeCampaignHeaders": [],
+            "ribbon": [
+                {
+                    "type": "PROMOTED"
+                }
+            ],
+            "chain": [],
+            "feeDetails": {
+                "fees": [
+                    {
+                        "name": "distance",
+                        "fee": 11200,
+                        "message": ""
+                    },
+                    {
+                        "name": "time",
+                        "fee": 0,
+                        "message": ""
+                    },
+                    {
+                        "name": "special",
+                        "fee": 0,
+                        "message": ""
+                    }
+                ],
+                "totalFees": 11200,
+                "message": "",
+                "title": "Delivery Charge",
+                "amount": "11200",
+                "icon": ""
+            },
+            "availability": {
+                "opened": true,
+                "nextOpenMessage": "",
+                "nextCloseMessage": ""
+            },
+            "longDistanceEnabled": 0,
+            "rainMode": "NONE",
+            "thirdPartyAddress": false,
+            "thirdPartyVendor": "",
+            "adTrackingID": "cid=7226163~p=1~eid=00000189-36d2-956b-0972-ffc2009e011d~srvts=1688841917803",
+            "badges": {
+                "imageBased": [],
+                "textBased": [],
+                "textExtendedBadges": []
+            },
+            "lastMileTravelString": "9.6 kms",
+            "hasSurge": false,
+            "aggregatedDiscountInfoV3": {
+                "header": "20% OFF",
+                "subHeader": "UPTO ₹50",
+                "discountTag": "",
+                "headerTypeV2": 0
+            },
+            "sla": {
+                "restaurantId": "723450",
+                "deliveryTime": 36,
+                "minDeliveryTime": 36,
+                "maxDeliveryTime": 36,
+                "lastMileTravel": 9.600000381469727,
+                "lastMileDistance": 0,
+                "serviceability": "SERVICEABLE",
+                "rainMode": "NONE",
+                "longDistance": "NOT_LONG_DISTANCE",
+                "preferentialService": false,
+                "iconType": "EMPTY"
+            },
+            "promoted": true,
+            "avgRating": "--",
+            "totalRatings": 0,
+            "new": true
         },
         "subtype": "basic"
     }
