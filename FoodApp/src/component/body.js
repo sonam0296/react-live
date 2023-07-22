@@ -45,8 +45,8 @@ const Body = () => {
     const fetchApiData = async () => {
         const response = await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=18.96056&lng=73.1275844&page_type=DESKTOP_WEB_LISTING")
         const jsonResponse = await response.json()
-        setRestaurantJsonData(jsonResponse?.data?.cards[0]?.data?.data?.cards)
-        setFilteredRestaurant(jsonResponse?.data?.cards[0]?.data?.data?.cards)
+        setRestaurantJsonData(jsonResponse?.data?.cards[2]?.data?.data?.cards)
+        setFilteredRestaurant(jsonResponse?.data?.cards[2]?.data?.data?.cards)
     }
 
     // Early return
